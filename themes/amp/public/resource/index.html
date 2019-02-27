@@ -1,0 +1,159 @@
+<!doctype html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <link rel="canonical" href="" />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-user-notification" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script type="application/ld+json">
+{
+      "@context": "http://schema.org",
+      "@type": "NewsArticle",
+      "mainEntityOfPage": "https://ampbyexample.com/samples_templates/news_article/",
+      "headline": "Lorem Ipsum",
+      "datePublished": "2016-04-21T11:55:02Z",
+      "dateModified": "2016-04-21T11:55:02Z",
+      "description": "A sample news article build with AMP.",
+      "author": {
+        "@type": "Person",
+        "name": "Sebastian Benz"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "http://cdn.ampproject.org/logo.jpg",
+          "width": 600,
+          "height": 60
+        }
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://ampbyexample.com/img/landscape_lake_1280x857.jpg",
+        "height": 1280,
+        "width": 857
+      }
+    }
+      </script>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat" rel="stylesheet">
+    <style amp-custom>:root {
+          --color-primary: #005AF0;
+          --color-text-light: #fff;
+          --color-text-dark: #000;
+          --color-bg-light: #FAFAFC;
+
+          --space-1: .5rem;  /* 8px */
+          --space-2: 1rem;   /* 16px */
+
+          --box-shadow-1: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+          }
+          .figure {
+            margin: var(--space-2) 0;
+            padding: 0;
+          }
+          .figure>figcaption{
+            padding: var(--space-1) var(--space-2);
+          }
+          .amp-ad-container {
+            display: flex;
+            margin: 0 auto;
+          }
+          .carousel .slide > amp-img > img {
+            object-fit: contain;
+          }
+          .heading {
+            padding-bottom: var(--space-1);
+          }
+          .heading h1 {
+            font-size: 3rem;
+            line-height: 3.5rem;
+            margin-bottom: var(--space-2);
+          }
+          .heading > #summary {
+            font-weight: 500;
+          }
+          .heading > small {
+            color: var(--color-primary);
+          }
+          .related {
+            background-color: var(--color-bg-light);
+            margin: var(--space-2);
+            display: flex;
+            color: var(--color-text-dark);
+            padding: 0;
+            box-shadow: var(--box-shadow-1);
+            text-decoration: none;
+          }
+          .related > span {
+            font-weight: 400;
+            margin: var(--space-1);
+          }
+          .related:hover {
+            background-color: var(--color-bg-light);
+          }
+          .list-link{
+          text-decoration:none;
+          color: #000;
+        }
+        .post-data{
+        color:grey; font-size:16px;
+      }
+      .post-author{
+      color:grey; font-size:16px;
+    }
+          .cookie-disclaimer {
+            padding: var(--space-1);
+            background: var(--color-bg-light);
+            text-align: center;
+            color: var(--color-text-light);
+          }
+</style>
+</head>
+<body>
+
+
+     <div style="margin:25px;">
+          <h1>this is resource page</h1>
+          <div style="font-size:18px;">{{ with .Resources.ByType &ldquo;image&rdquo; }} {{ range . }} {{ end }}  {{ end }} {{ with .Resources.Match &ldquo;post/*&rdquo; }} {{ range . }} {{ end }}  {{ end }}</div>
+          <div class="post-data">Monday, Jan 1, 0001</div>
+          <div class="post-author"></div>
+          <div style="social-share"><amp-social-share type="twitter" width="45" height="33"></amp-social-share>
+      <amp-social-share type="facebook" width="45" height="33" data-attribution="254325784911610"></amp-social-share>
+      <amp-social-share type="gplus" width="45" height="33"></amp-social-share>
+      <amp-social-share type="email" width="45" height="33"></amp-social-share>
+      <amp-social-share type="pinterest" width="45" height="33"></amp-social-share></div>
+      <div class="content">
+          <p>{{ with .Resources.ByType &ldquo;image&rdquo; }}
+  <div class="Image">
+  {{ range . }}
+    <img src="{{ .RelPermalink }}">
+  {{ end }}
+  </div>
+{{ end }}
+{{ with .Resources.Match &ldquo;post/*&rdquo; }}
+  <div class="Carousel__slide">
+  {{ range . }}
+    <img src="{{ .RelPermalink }}">
+  {{ end }}
+  </div>
+{{ end }}</p>
+
+      </div>
+     </div>
+
+<div style="height:35px;"></div>
+<div style=" position:fixed; color: white; height:35px; background-color:#757575; bottom:0px; text-align:center; width:99%">
+     <p style="margin:10px; "><a style="color: white; " target="_blank" href="http://www.mtf.mutafaf.com/">Timcloud</a> - Hugo Theme</p>
+</div>
+
