@@ -1,4 +1,4 @@
-
+baseurl = "https://ghaffarbajwa9.github.io/hugo/."
 name = "AMP"
 description = "This is amp site"
 publishDir = "docs"
