@@ -1,10 +1,11 @@
 
 name = "AMP"
 description = "This is amp site"
+publishDir = "docs"
 homepage = "https://github.com/ghaffarbajwa9/hugo"
 tags = ["blog", "portfolio", "AMP", "Material Design"]
 features = ["AMP","Material Design","Google Analytics","Menu","Tags","Categories","Social links"]
-publishDir = "docs"
+
 [author]
   name = "abdul"
   homepage = "https://github.com/ghaffarbajwa9/hugo"
